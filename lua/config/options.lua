@@ -3,3 +3,5 @@
 -- Add any additional options here
 
 vim.opt.fillchars = { eob = " " }
+-- vim.opt.mouse = ""
+vim.opt.timeoutlen = 1000

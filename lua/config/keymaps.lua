@@ -16,7 +16,7 @@ vim.cmd("nnoremap K 5k")
 vim.cmd('nnoremap "" vi"')
 vim.cmd("vnoremap am aBjoV")
 
--- vim.keymap.set("n", "<M-1>", ":ToggleTerm size=13.5 direction=horizontal<cr>", { silent = true })
+vim.keymap.set("n", "<M-1>", ":ToggleTerm size=16 direction=horizontal<cr>", { silent = true })
 
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })

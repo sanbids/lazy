@@ -1,6 +1,6 @@
 require("toggleterm").setup({
   -- size can be a number or function which is passed the current terminal
-  open_mapping = [[<c-\>]],
+  open_mapping = [[<M-1>]],
   hide_numbers = true, -- hide the number column in toggleterm buffers
   shade_filetypes = {},
   autochdir = true, -- when neovim changes it current directory the terminal will change it's own when next it's opened
@@ -17,7 +17,7 @@ require("toggleterm").setup({
   terminal_mappings = true, -- whether or not the open mapping applies in the opened terminals
   persist_size = true,
   persist_mode = true, -- if set to true (default) the previous terminal mode will be remembered
-  direction = "float",
+  direction = "horizontal",
   close_on_exit = true, -- close the terminal window when the process exits
   -- Change the default shell. Can be a string or a function returning a string
   shell = "zsh",

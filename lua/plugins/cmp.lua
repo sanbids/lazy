@@ -3,6 +3,7 @@ return {
     "hrsh7th/nvim-cmp",
     dependencies = {
       "hrsh7th/cmp-emoji",
+      "hrsh7th/cmp-nvim-lsp-signature-help",
     },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
@@ -14,6 +15,12 @@ return {
 
       local luasnip = require("luasnip")
       local cmp = require("cmp")
+
+      cmp.setup({
+        sources = {
+          { name = "nvim_lsp_signature_help" },
+        },
+      })
 
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)

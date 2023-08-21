@@ -2,3 +2,5 @@
 require("config.lazy")
 require("config.which-key")
 require("config.toggleTerm")
+require("config.cmp-nvim")
+require("config.emmet-lsp")
