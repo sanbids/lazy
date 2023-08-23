@@ -16,6 +16,9 @@ vim.cmd("nnoremap K 5k")
 vim.cmd('nnoremap "" vi"')
 vim.cmd("vnoremap am aBjoV")
 
+vim.keymap.set("n", "<leader>fn", "<cmd>lua createFileWithCustomName()<cr>", { desc = "New File" })
+vim.keymap.set("n", "<leader>fd", "<cmd>lua deleteCurrentBufferFile()<cr>", { desc = "delete file" })
+
 vim.keymap.set("n", "<M-1>", ":ToggleTerm size=16 direction=horizontal<cr>", { silent = true })
 
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })

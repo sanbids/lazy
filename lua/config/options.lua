@@ -5,3 +5,4 @@
 vim.opt.fillchars = { eob = " " }
 -- vim.opt.mouse = ""
 vim.opt.timeoutlen = 1000
+vim.g.loaded_netrw = 1

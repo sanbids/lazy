@@ -5,9 +5,9 @@ whichkey.register({
   q = { "<cmd>q!<CR>", "Quits" },
   c = {
     function()
-      require("mini.bufremove").delete(0, false)
+      require("bufdelete").bufdelete(0, true)
     end,
-    "Close Buffer",
+    "Close Bufferss",
   },
   b = {
     n = { "<cmd>BufferLineCycleNext<cr>", "Next" },
@@ -24,7 +24,7 @@ whichkey.register({
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },
     d = { "<cmd>Telescope diagnostics bufnr=0 theme=get_ivy<cr>", "Buffer Diagnostics" },
     w = { "<cmd>Telescope diagnostics<cr>", "Diagnostics" },
-    f = { "<cmd>lua require('lvim.lsp.utils').format()<cr>", "Format" },
+    f = { "<cmd>lua vim.lsp.buf.format()", "Format" },
     i = { "<cmd>LspInfo<cr>", "Info" },
     I = { "<cmd>Mason<cr>", "Mason Info" },
     j = {
